@@ -1,0 +1,29 @@
+
+.foot{
+    padding-top: 60px;
+    padding-bottom: 30px;
+    background: rgba(80, 107, 45, 0.8) ;
+    h1,h3,p{
+        color: #fff;
+    }
+}
+.link ul li{
+    background: transparent !important;
+
+    a{
+        color: #fff;
+    }
+    a:hover{
+        color: #ccc;
+    }
+}
+.link_text{
+    margin-bottom: 30px;
+    font-size: 1.1rem;
+}
+.copy_write{
+    font-size: 0.9rem;
+    text-align: center;
+    margin-top: 40px;
+}
+

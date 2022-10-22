@@ -1,0 +1,71 @@
+@mixin focus {
+    &:focus{
+        outline: none;
+    }
+}
+
+.product_detail{
+    margin-top: 50px;
+
+    h2{
+        font-size: 1.8rem;
+        margin-bottom: 10px;
+    }
+}
+.product_rt{
+    span i{
+        color: rgb(243, 92, 38);
+    }
+   p span{
+    color: rgb(243, 92, 38);
+    font-weight: 500;
+   }
+}
+.price_produ{
+    font-size: 1.3rem;
+    font-weight: 500;
+}
+.tab_wrap{color: #ccc; font-weight: 500; font-size: 1rem;cursor: pointer;}
+.active{font-weight: bold;}
+.tb-content p{
+    line-height: 30px;
+}
+
+.review_wp ul li span{
+    color: rgb(243, 92, 38);
+    font-weight: 600;
+}
+.review_wp ul li p{
+    margin-top: 10px;
+}
+
+.form{
+    width: 70%;
+    margin: auto;
+    margin-top: 50px;
+    h4{
+        font-size: 1.2rem;
+        font-weight: 600;
+        margin-bottom: 30px;
+    }
+}
+.form-g {
+    margin-bottom: 30px;
+
+    input,textarea{
+    width: 100%;
+    border: 1px solid #cccc;
+    border-radius: 5px;
+    padding: 8px 20px;
+    @include focus();
+    }
+    span{
+        display: flex;
+        align-items: center;
+        column-gap: 5px;
+        color: coral;
+        font-weight: bold;
+        cursor: pointer;
+    }
+  
+}

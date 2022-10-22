@@ -1,0 +1,16 @@
+@mixin gradiente {
+    background: linear-gradient(#222,rgba(0, 0, 0, 0)),url('../../image/commonSecti.jpg') no-repeat center center;
+    background-size: cover;
+    padding: 100px 0;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+
+.common_section{
+    @include gradiente();
+    h1{
+        color: #fff;
+        font-weight: 600;
+    }
+}

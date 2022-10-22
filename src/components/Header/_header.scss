@@ -1,0 +1,139 @@
+
+@mixin centerItems {
+    display: flex;
+    align-items: center;
+   
+}
+.header{
+    width: 100%;
+    height: 70px;
+    line-height: 70px;
+}
+
+.nav_wrap{
+    @include centerItems();
+    justify-content: space-between;
+}
+.logo_commerce{
+    @include centerItems();
+    column-gap: 8px;
+    img{
+        width: 150px;
+        height: 100px;
+        object-fit: cover;
+    }
+    h1{
+        font-size: 1.2rem;
+        font-weight: 600;
+        color: #944410;
+    }
+}
+.menu_shop{
+    @include centerItems();
+    column-gap: 2.7rem;
+    margin-bottom:1.2rem ;
+
+    .nav_link a{
+        font-weight: 500;
+    }
+}
+.nav_icons{
+    @include centerItems();
+    column-gap: 1.2rem;
+    
+    span i{
+        font-size: 1.3rem;
+        position: relative;
+    }
+    .badge{
+        position: absolute;
+        width: -15px;
+        height: -15px;
+        text-align: center;
+        top: 5%;
+        right: 12%;
+        content: '';
+        color: #fff;
+        background-color: rgba(175, 121, 58, 0.8);
+        font-size: 0.8rem;
+        font-weight: 600;
+        z-index: 1;
+    }
+    img{
+        width: 35px;
+        height: 35px;
+    }
+}
+.menu_mobile{
+    font-size: 1.3rem;
+    display: none;
+    cursor: pointer;
+}
+.active{
+    font-weight: 600 !important;
+}
+
+.stick_head{
+    width: 100%;
+    height: 70px;
+    line-height: 70px;
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    box-shadow: 3px 3px 8px -3px #ddd;
+    background: #fff;
+}
+
+@media only screen and (max-width:768px) {
+    .navigation{
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.253);
+        z-index: 999;
+        display: none;
+    }
+    .menu_shop{
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 250px;
+        height: 100%;
+        background: #fff;
+        z-index: 9999;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .active{display: block;}
+    .menu_mobile{
+        display: block;
+    }
+    .menu_mobile span i{
+        font-size: 1.2rem;
+    }
+
+    .logo_commerce{
+        img{
+          display: none;
+        }
+        h1{
+            font-size: 1rem;
+        }
+        .cart i{
+            font-size: 1.2rem !important;
+        }
+    }
+    .nav_icons{
+        width: 1.4rem;
+        height: 1.4rem;
+    }
+    .header{
+        width: 100%;
+        height: 60px;
+        line-height: 60px;
+    }
+}
