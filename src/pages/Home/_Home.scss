@@ -17,7 +17,10 @@ $colorClock:#ffba00;
 
 
 .section{
-    background:$heading-text-color;
+    background-image: url('../../image/fundo.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    object-fit: cover;
     @include styleLine();
     h2{
        color: #fff;
@@ -44,6 +47,7 @@ $colorClock:#ffba00;
         color: #fff;
        }
 }
+
 .her_img{
     background:transparent;
     border-radius: 50px;

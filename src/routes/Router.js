@@ -7,7 +7,7 @@ import Product from '../pages/ProductDetail/ProductDetails'
 import Checkout from '../pages/Checkout/Checkout'
 import Login from '../pages/Login/Login'
 import Logout from '../pages/Logout/Logout'
-
+import ProtectRoute from './ProtectRoute'
 
 function Router() {
   return (
@@ -17,7 +17,9 @@ function Router() {
         <Route path='shop' element={<Shop/>}/>
         <Route path='shop/:id' element={<Product/>}/>
         <Route path='cart' element={<Cart/>}/>
-        <Route path='checkout' element={<Checkout/>}/>
+        <Route path='checkout' element={<ProtectRoute>
+          <Checkout/>
+        </ProtectRoute>}/>
         <Route path='login' element={<Login/>}/>
         <Route path='logout' element={<Logout/>}/>
     </Routes>

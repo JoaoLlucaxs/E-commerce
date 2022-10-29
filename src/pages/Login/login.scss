@@ -1,0 +1,40 @@
+
+.auth_form{
+    background-color: #cccc;
+    padding: 80px;
+    border-radius: 5px;
+    p{
+        margin-top: 1.1rem;
+        color: rgb(78, 99, 68);
+    }
+    a{
+        color: rgb(78, 99, 68);
+        border-bottom: 2px solid #fff;
+    }
+    input[type='file']{
+        cursor: pointer;
+    }
+}
+
+
+.text{
+    color: rgb(72, 105, 64);
+    margin-bottom: 1.2rem;
+}
+.form_group{
+    input{
+        border: none;
+        width: 100%;
+        padding: 10px;
+        border-radius: 5px;
+        outline: none;
+    }
+}
+.buy_btn{
+    background: rgb(47, 70, 48);
+    color: #fff;
+    font-weight: 600;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+}

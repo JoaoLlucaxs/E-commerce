@@ -1,7 +1,6 @@
 import React,{useState,useEffect} from 'react';
 import Head from '../../components/Head/Head';
 import {Container,Row,Col} from 'reactstrap'
-import Chair from '../../image/itemhome.png'
 import {motion} from 'framer-motion'
 import {Link} from 'react-router-dom'
 import Services from '../../Services/services';
@@ -36,7 +35,7 @@ function Home() {
     <>
     <Head title='Home | Shooping' description='Home do e-commerce'/>
     <section className='section'>
-      <Container>
+      <Container className='container'>
         <Row>
           <Col lg='6' md='6'>
             <div className='her_content'>
@@ -44,11 +43,6 @@ function Home() {
               <h2>Torne seu interior mais sofisticado & moderno</h2>
               <p>Produto a base 100% de certeza que irá dar certo, experimente já</p>
               <motion.button whileTap={{scale:1.2}} className='btn'><Link to='shop'>Compre Agora</Link></motion.button>
-            </div>
-          </Col>
-          <Col lg='6' md='6'>
-            <div className='her_img'>
-              <img src={Chair} alt='Chair minimalist'/>
             </div>
           </Col>
         </Row>

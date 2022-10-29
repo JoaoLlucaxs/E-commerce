@@ -8,6 +8,9 @@
 @import './components/Ui/commonSection';
 @import './pages/Shop/shop';
 @import './pages/ProductDetail/productDetail';
+@import './pages/Cart/Cart.scss';
+@import './pages/Checkout/checkout.scss';
+@import './pages/Login/login.scss';
 
 $hero-bg:#c2ccd5;
 $--heading-font:2rem;

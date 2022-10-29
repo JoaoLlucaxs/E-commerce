@@ -48,7 +48,7 @@ function Shop() {
    <section>
     <Container>
       <Row>
-        <Col lg='3' md='3'>
+        <Col lg='3' md='6'>
           <div className='filter_widget'>
             <select onChange={filterSearch}>
             <option>Categorias</option>
@@ -60,7 +60,7 @@ function Shop() {
             </select>
           </div>
         </Col>
-        <Col lg='3' md='3'>
+        <Col lg='3' md='12' className='text-end'>
         <div className='filter_widget'>
             <select name='' id=''>
             <option>Ordenar Por:</option>

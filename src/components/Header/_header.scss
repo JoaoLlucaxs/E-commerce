@@ -40,18 +40,18 @@
 .nav_icons{
     @include centerItems();
     column-gap: 1.2rem;
-    
+    cursor: pointer;
     span i{
         font-size: 1.3rem;
         position: relative;
     }
     .badge{
-        position: absolute;
-        width: -15px;
-        height: -15px;
+        position: relative;
+        width: -10px;
+        height: -10px;
         text-align: center;
-        top: 5%;
-        right: 12%;
+        top: 10%;
+        right: 20%;
         content: '';
         color: #fff;
         background-color: rgba(175, 121, 58, 0.8);
@@ -60,9 +60,23 @@
         z-index: 1;
     }
     img{
-        width: 35px;
-        height: 35px;
+        width: 30px;
+        height: 30px;
+        cursor: pointer;
+        border-radius: 50%;
     }
+    .profile{
+        position: relative;
+        z-index: 9;
+    }
+
+}
+.act{
+    padding: 10px;
+    border-radius: 50%;
+    background: rgb(50, 100, 50);
+    color: #fff;
+    cursor: pointer;
 }
 .menu_mobile{
     font-size: 1.3rem;
@@ -125,6 +139,7 @@
         }
         .cart i{
             font-size: 1.2rem !important;
+           
         }
     }
     .nav_icons{
@@ -136,4 +151,6 @@
         height: 60px;
         line-height: 60px;
     }
+    
+    
 }

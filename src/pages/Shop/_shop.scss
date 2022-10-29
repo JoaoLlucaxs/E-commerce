@@ -24,3 +24,12 @@
         padding: 8px 10px;
     }
 }
+@media only screen and (max-width:768px){
+    .filter_widget{
+        margin-bottom: 30px;
+    }
+    .filter_widget select{
+        padding: 7px 20px;
+        font-size: 0.9rem;
+    }
+}

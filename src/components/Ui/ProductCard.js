@@ -15,7 +15,7 @@ function ProductCard({item}) {
             id:item.id,
             productName:item.productName,
             price:item.price,
-            image:item.imgUrl,
+            imgUrl:item.imgUrl,
 
         }))
         toast.success('Item adicionado ao Carrinho')
@@ -25,14 +25,16 @@ function ProductCard({item}) {
     <Col lg='3' md='4'>
     <div className='product_items mb-2'>
         <div className='producut_img'>
+        <Link to={`/shop/${item.id}`}>
             <motion.img whileHover={{scale:0.9}} src={item.imgUrl} alt='Armchair'/>
             <div className='p-2 product_information'>
             <h3 className='name_product'>
-                <Link to={`/shop/${item.id}`}>{item.productName}</Link>
+                {item.productName}
             </h3>
             <span className='center_txt d-block'>
             </span>
             </div>
+            </Link>
             <div className='card_btn d-flex align-items-center
             justify-content-between'>
                 <span className='price'>R$ {item.price}</span>

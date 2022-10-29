@@ -1,0 +1,25 @@
+
+.form_container {
+    .form_group input{
+        border: 1px solid #cccc;
+    }
+   
+}
+.checkout_cart{
+    padding: 20px;
+    background: rgba(90, 110, 72, 0.8);
+    color:#fff;
+    border-radius: 5px;
+    h5,h4{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    h5{
+        margin-bottom: 20px;
+    }
+    h4{
+        border-top: 1px solid #fff;
+        padding-top: 20px;
+    }
+}
