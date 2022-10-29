@@ -39,5 +39,5 @@ Para rodar o repositório é necessário clonar o mesmo, dar o seguinte comando 
 
  # 🎯 Status do projeto -Em Reajuste 
 
- <img src='./src/image/e-commerce.gif' alt=''/>
+ <img src='./src/image/e-commerce.gif' alt='pré visualização'/>
 
