@@ -35,9 +35,8 @@ Para rodar o repositório é necessário clonar o mesmo, dar o seguinte comando 
 
 # O que será implementado na próxima sprint?
 
-### Projeto está em desenvolvimento , código disponível é o final dele porém falta algumas alterações de posições e pequenos detalhes referente a versão mobile e a conversão do sass para o css para completar, em breve link para teste disponível
-
- # 🎯 Status do projeto -Em Reajuste 
+###Projeto 90% finalizado apenas falta algumas alterações de posições e pequenos detalhes referente a versão mobile.
+ # 🎯 Status do projeto - Detalhes Finais 
 
  <img src='./src/image/e-commerce.gif' alt='pré visualização'/>
 
