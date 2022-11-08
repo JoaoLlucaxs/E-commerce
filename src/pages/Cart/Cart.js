@@ -49,7 +49,7 @@ function Cart() {
             <p>Impostos e frete serão calculados no checkout</p>
             <div>
               <button className='btn_cart'><Link to='/shop'>Continue Comprando</Link></button>
-              <button className='btn_cart'><Link to='/checkout'>Finalizar</Link></button>
+              <button className='btn_cart'><Link to='/login'>Finalizar</Link></button>
             </div>
             </Col>
           </Row>

@@ -1,6 +1,6 @@
 $bgSection:#49583c;
 $image:#2222;
-$primary-color:#f7f6f5;
+$primary-color:#000;
 $heading-text-color:#c0ad74;
 $colorClock:#ffba00;
 
@@ -23,14 +23,14 @@ $colorClock:#ffba00;
     object-fit: cover;
     @include styleLine();
     h2{
-       color: #fff;
+       color:$bgSection;
        font-weight: bold;
        font-size: 2.5rem;
        margin: 20px 0;
       
     }
     p{
-        color: $primary-color;
+        color: $bgSection;
         line-height: 27px;
        }
        .btn{
@@ -38,7 +38,7 @@ $colorClock:#ffba00;
         padding: 8px 20px;
         border-radius: 5px;
         background-color:$bgSection;
-        color:  $primary-color;
+        color: $bgSection;
         font-size: 1rem;
         margin-top: 40px;
         cursor: pointer;
@@ -55,6 +55,8 @@ $colorClock:#ffba00;
 }
 .her_content{
     padding: 45px;
+    background-color: rgba(255, 255, 255, 0.411);
+    border-radius: 5px;
 }
 .txt_center{
     .section_title{

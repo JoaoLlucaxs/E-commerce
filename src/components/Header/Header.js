@@ -74,7 +74,7 @@ function Header() {
         <Row>
           <div className='nav_wrap'>
             <div className='logo_commerce'>
-              <img src={Logo} alt=''/>
+              <Link to='/login'><img src={Logo} alt=''/></Link>
               <div>
                 <h1>ATACADOS / VAREJO</h1>
               </div>
